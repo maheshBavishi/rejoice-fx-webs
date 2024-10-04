@@ -1,0 +1,46 @@
+@import '../../../scss/mixins/index.scss';
+
+.explicitAlignment {
+    padding: 120px 0;
+
+    .grid {
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        align-items: center;
+        gap: 60px;
+
+        .img {
+            position: relative;
+            height: 510px;
+            width: 100%;
+            border-radius: 24px;
+
+            img {
+                border-radius: 24px;
+
+            }
+        }
+
+        .iconText {
+            display: grid;
+            grid-template-columns: 24px 1fr;
+            gap: 14px;
+            padding: 0 0 24px 0 ;
+
+            span {
+                display: block;
+                color: var(--foundation-white-dark-active, #737373);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+
+        h2 {
+            @include heading1;
+            color: #0B0B14;
+            margin: 16px 0 30px 0;
+        }
+    }
+}

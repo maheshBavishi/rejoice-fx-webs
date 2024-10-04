@@ -1,0 +1,8 @@
+@mixin heading1 {
+    @include heading-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.48px;
+}

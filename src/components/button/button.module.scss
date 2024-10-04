@@ -1,0 +1,43 @@
+@import '../../scss/mixins/index.scss';
+
+.button {
+    &.outline {
+        button {
+            border: 1px solid #014EFF;
+            color: #0B0B14;
+            background-color: transparent;
+            transition: .3s ease-in-out;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            &:hover {
+                color: #fff;
+                background: #014EFF;
+
+            }
+        }
+    }
+
+    button {
+        background: #014EFF;
+        padding: 10px 24px;
+        color: #fff;
+        border-radius: 999px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        line-height: 24px;
+        border: 1px solid #014EFF;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            border: 1px solid #014EFF;
+            color: #014EFF;
+            background-color: transparent;
+        }
+    }
+}

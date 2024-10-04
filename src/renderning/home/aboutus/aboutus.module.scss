@@ -1,0 +1,38 @@
+@import '../../../scss/mixins/index.scss';
+
+.aboutusSctionAlignment {
+    padding: 120px 0;
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 640px;
+        gap: 120px;
+
+        .griditems {
+            h2 {
+                color: #0B0B14;
+                @include heading1;
+                margin: 16px 0;
+            }
+
+            p {
+                color: #737373;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                margin: 0 0 16px 0;
+            }
+
+            .image {
+                position: relative;
+                border-radius: 30px;
+                height: 670px;
+                width: 100%;
+                img {
+                border-radius: 30px;
+                }
+            }
+        }
+    }
+}

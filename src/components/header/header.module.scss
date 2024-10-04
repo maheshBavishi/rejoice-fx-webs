@@ -1,0 +1,75 @@
+@import '../../scss/mixins/index.scss';
+
+.header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px 0;
+
+    .headerAlignment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            position: relative;
+            width: 180px;
+            cursor: pointer;
+            height: 38px;
+        }
+
+        .buttonDesign {
+            svg {
+                transition: .3s ease-in-out;
+
+                path {
+                    transition: .3s ease-in-out;
+
+                }
+            }
+
+            button {
+                &:hover {
+                    svg {
+                        path {
+                            fill: #014EFF;
+                            transition: .3s ease-in-out;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .menuAlignment {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .menu {
+                padding: 8px 20px;
+                color: #0F0F1A;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                border-radius: 999px;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                line-height: normal;
+
+                svg {
+                    width: 12px;
+                    height: 12px;
+                }
+
+                &:hover {
+                    background: #E6EDFF;
+                }
+            }
+        }
+    }
+}
