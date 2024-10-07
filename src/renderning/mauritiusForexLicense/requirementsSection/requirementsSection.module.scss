@@ -2,7 +2,9 @@
 
 .requirementsSection {
     padding: 120px 0;
-
+    @include breakpoint("md-max") {
+        padding: 60px 0;
+    }
     .btnCenter {
         display: flex;
         padding: 0 0 16px 0;
@@ -28,6 +30,7 @@
 
         @include breakpoint("sm-max") {
             border-radius: 12px;
+            padding: 30px 0;
         }
 
 
@@ -35,6 +38,11 @@
             display: grid;
             grid-template-columns: 1fr 600px;
             gap: 60px;
+
+            @include breakpoint("md-max") {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
 
             .document {
                 h3 {
@@ -51,6 +59,11 @@
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     gap: 40px;
+
+                    @include breakpoint("sm-max") {
+                        grid-template-columns: 1fr;
+                        gap: 20px;
+                    }
 
                     .twoColItems {
                         .iconText {
@@ -113,11 +126,15 @@
             width: 100%;
             position: relative;
             border-radius: 24px;
-
             height: 600px;
-
+            @include breakpoint("sm-max") {
+                height: 320px;
+            }
             img {
                 border-radius: 24px;
+                @include breakpoint("sm-max") {
+                    border-radius: 12px;
+                }
             }
         }
     }

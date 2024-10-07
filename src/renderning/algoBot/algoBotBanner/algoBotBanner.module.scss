@@ -3,12 +3,18 @@
 .algoBotBanner {
     background-image: url('/assets/images/banner2.png');
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     padding: 100px 0 0 0;
     border-radius: 34px;
     height: 700px;
     background-size: cover;
 
+    @include breakpoint("md-max") {
+        border-radius: 12px;
+        padding: 60px 20px;
+        height: 600px;
+    }
     @include breakpoint("sm-max") {
         border-radius: 12px;
     }
@@ -55,9 +61,21 @@
         height: 670px;
         position: relative;
 
+        @include breakpoint("md-max") {
+            height: 520px;
+            margin-top: -280px;
+        }
+
+        @include breakpoint("md-max") {
+            height: 320px;
+            margin-top: -280px;
+        }
+
         img {
             border-radius: 20px;
-
+            @include breakpoint("sm-max") {
+                border-radius: 12px;
+            }
         }
     }
 }

@@ -36,29 +36,29 @@ export default function Herobanner() {
         <Slider {...settings}>
           <div className={styles.sliderText}>
             <h2>
-              Optimize Operations with Our CRM
+            Optimize Operations with Our CRM
             </h2>
             <p>
-            Streamline your client management and enhance efficiency with our tailored CRM solutions. Designed specifically for Forex brokers to help you stay organized 
-            and boost performance.
+            Streamline your client management and enhance efficiency with our tailored CRM solutions. Designed specifically for Forex brokers to help you stay 
+            organized and boost performance.
             </p>
           </div>
           <div className={styles.sliderText}>
             <h2>
-              Optimize Operations with Our CRM
+            Obtain Your Forex Broker License
             </h2>
             <p>
-            Streamline your client management and enhance efficiency with our tailored CRM solutions. Designed specifically for Forex brokers to help you stay organized 
-            and boost performance.
+            Easily navigate the licensing process with our expert guidance. Start your Forex brokerage in Mauritius 
+            or St. Lucia today.
             </p>
           </div>
           <div className={styles.sliderText}>
             <h2>
-              Optimize Operations with Our CRM
+            Trade Better, Smarter, Faster.
             </h2>
             <p>
-            Streamline your client management and enhance efficiency with our tailored CRM solutions. Designed specifically for Forex brokers to help you stay organized 
-            and boost performance.
+            Leverage AI-powered tools to automate your trading strategies and maximize returns. Experience faster execution and smarter 
+            decision-making with Rejoicefx.
             </p>
           </div>
          

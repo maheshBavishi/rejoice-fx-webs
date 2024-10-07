@@ -37,12 +37,24 @@
         grid-template-columns: repeat(5, 1fr);
         gap: 20px;
 
+        @include breakpoint("md-max") {
+            grid-template-columns: repeat(2 , 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: repeat(1 , 1fr);
+        }
+
 
         .griditems:last-child {
             border-radius: 22px;
             border: 1px solid var(--foundation-blue-light-active, #B0C8FF);
             background: var(--Foundation-Blue-Normal, #014EFF);
             padding: 30px;
+
+            @include breakpoint("md-max") {
+                min-height: 328px;
+            }
 
             p {
                 color: var(--Foundation-White-Normal, #FFF);

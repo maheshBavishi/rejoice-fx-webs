@@ -15,6 +15,15 @@
         display: grid;
         grid-template-columns: repeat(3 , 1fr);
         gap: 30px;
+
+        @include breakpoint("md-max") {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: 1fr;
+        }
     }
 
     .title {
@@ -39,6 +48,10 @@
             button {
                 min-width: 120px;
                 justify-content: center;
+
+                @include breakpoint("sm-max") {
+                    min-width: auto;
+                }
             }
         }
     }
@@ -49,12 +62,20 @@
         display: flex;
         scrollbar-width: none;
         justify-content: center;
-
+        @include breakpoint("sm-max") {
+            justify-content: inherit;
+        }
         .items {
             min-width: 180px;
             max-width: 180px;
             width: 180px;
             position: relative;
+
+            @include breakpoint("sm-max") {
+                min-width: 130px;
+                max-width: 130px;
+                width: 130px;
+            }
 
             &.itemsActive {
                 &::before {
@@ -231,7 +252,11 @@
             border-radius: 12px;
             padding: 20px;
         }
-
+        .totlRight {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
         span {
             display: block;
             color: var(--Foundation-Blue-Normal, #0F0F1A);

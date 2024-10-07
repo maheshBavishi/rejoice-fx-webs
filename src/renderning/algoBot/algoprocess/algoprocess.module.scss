@@ -2,6 +2,9 @@
 
 .algoprocessAlignment {
     padding: 120px 0;
+    @include breakpoint("md-max") {
+        padding: 60px 0;
+    }
 
     .centeralignment {
         display: flex;

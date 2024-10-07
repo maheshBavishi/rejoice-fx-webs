@@ -19,7 +19,8 @@ export default function Aboutus() {
                       cutting-edge tools.
                       </p>
                       <p>
-                      At Rejoicefx, we deliver comprehensive forex technology solutions including company formation, broker licensing, web development, trader’s room setup, MT4 White Label, and CRM integration to help your brokerage thrive in the 
+                      At Rejoicefx, we deliver comprehensive forex technology solutions including company formation, broker licensing, web development, trader’s room setup, MT4/ MT5
+                      White Label, and CRM integration to help your brokerage thrive in the 
                       competitive market.
                       </p>
                     </div>

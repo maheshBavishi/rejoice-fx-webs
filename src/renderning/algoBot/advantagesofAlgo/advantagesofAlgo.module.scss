@@ -4,6 +4,9 @@
     background-color: rgba(241, 242, 244, 0.7);
     padding: 120px 0;
     border-radius: 34px;
+    @include breakpoint("md-max") {
+        padding: 60px 0;
+    }
     @include breakpoint("sm-max") {
         border-radius: 12px;
     }
@@ -27,6 +30,17 @@
         grid-template-columns: repeat(3, 1fr);
         padding: 60px 0 0 0;
         gap: 30px;
+
+        @include breakpoint("md-max") {
+            padding: 40px 0 0 0;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns:  1fr;
+            gap: 20px;
+        }
 
         .griditems {
             padding: 30px;

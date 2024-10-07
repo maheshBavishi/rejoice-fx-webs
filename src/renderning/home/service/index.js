@@ -23,7 +23,8 @@ export default function Service() {
           <div className={styles.grid}>
             <div className={styles.griditems}>
               <button>01</button>
-              <h3>CRM</h3>
+              <h3>Forex CRM
+              </h3>
               <p>
                 Manage clients and streamline operations with a CRM designed specifically 
                 for Forex businesses.
@@ -34,7 +35,8 @@ export default function Service() {
             </div>
             <div className={styles.griditems}>
               <button>02</button>
-              <h3>Licenses</h3>
+              <h3>Forex Licenses
+              </h3>
               <p>
               Obtain your Forex broker license seamlessly in jurisdictions like Mauritius and St. Lucia with our expert guidance.
               </p>
@@ -44,7 +46,7 @@ export default function Service() {
             </div>
             <div className={styles.griditems}>
               <button>03</button>
-              <h3>Algo Bot</h3>
+              <h3>Forex Algo Bot and Strategies</h3>
               <p>
               Automate your trading strategies using intelligent bots that execute trades based on real-time market analysis.
               </p>

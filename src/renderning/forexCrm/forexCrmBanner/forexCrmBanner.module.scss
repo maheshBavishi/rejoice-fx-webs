@@ -10,8 +10,8 @@
     border-radius: 34px;
     background-position: center;
 
-    @include breakpoint("sm-max") {
-        border-radius: 12px;
+    @include breakpoint("md-max") {
+        padding: 60px 0;
     }
 
     .centeralignment {

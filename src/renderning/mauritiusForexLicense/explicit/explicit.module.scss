@@ -2,12 +2,22 @@
 
 .explicitAlignment {
     padding: 120px 0;
-
+    @include breakpoint("md-max") {
+        padding: 60px 0;
+    }
+    @include breakpoint("sm-max") {
+        padding: 0 0 60px 0;
+    }
     .grid {
         display: grid;
         grid-template-columns: 600px 1fr;
         align-items: center;
         gap: 60px;
+
+        @include breakpoint("md-max") {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
 
         .img {
             position: relative;
@@ -15,8 +25,17 @@
             width: 100%;
             border-radius: 24px;
 
+            @include breakpoint("sm-max") {
+                height: 320px;
+                border-radius: 12px;
+            }
+
             img {
                 border-radius: 24px;
+                @include breakpoint("sm-max") {
+                border-radius: 12px;
+
+                }
 
             }
         }

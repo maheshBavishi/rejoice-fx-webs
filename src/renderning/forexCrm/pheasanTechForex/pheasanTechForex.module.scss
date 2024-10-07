@@ -91,7 +91,9 @@
     border-radius: 34px;
     background: #F6F6F8;
     padding: 100px 0;
-
+    @include breakpoint("md-max") {
+        padding: 60px 0;
+    }
     @include breakpoint("sm-max") {
         border-radius: 12px;
     }

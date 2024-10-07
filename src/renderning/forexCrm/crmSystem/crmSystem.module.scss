@@ -7,7 +7,9 @@
         border-radius: 34px;
         padding: 120px 0;
         background: var(--Foundation-Blue-Normal, #014EFF);
-
+        @include breakpoint("md-max") {
+            padding: 60px 0;
+        }
         @include breakpoint("sm-max") {
             border-radius: 12px;
         }

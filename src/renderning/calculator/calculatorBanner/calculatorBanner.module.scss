@@ -8,6 +8,10 @@
     border-radius: 34px;
     background-size: cover;
 
+    @include breakpoint("md-max") {
+        padding: 60px 0;
+    }
+
     @include breakpoint("sm-max") {
         border-radius: 12px;
     }
