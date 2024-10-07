@@ -122,6 +122,10 @@
                 font-weight: 600;
                 line-height: normal;
                 letter-spacing: -0.18px;
+
+                @include breakpoint("sm-max") {
+                    @include font14;
+                }
             }
 
             p {

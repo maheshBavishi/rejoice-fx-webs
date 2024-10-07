@@ -31,6 +31,9 @@
                 font-weight: 400;
                 line-height: 30px;
                 margin: 0 0 16px 0;
+                @include breakpoint("sm-max") {
+                    @include font14;
+                }
             }
 
             .image {
@@ -38,8 +41,17 @@
                 border-radius: 30px;
                 height: 670px;
                 width: 100%;
+
+                @include breakpoint("sm-max") {
+                    height: 320px;
+                border-radius: 12px;
+                }
                 img {
                 border-radius: 30px;
+                @include breakpoint("sm-max") {
+                border-radius: 12px;
+
+                }
                 }
             }
         }

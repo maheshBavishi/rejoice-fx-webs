@@ -6,9 +6,13 @@
     width: 100%;
     border-radius: 34px;
     padding: 120px 0;
+    background-position: center;
 
     @include breakpoint("md-max") {
         padding: 60px 0;
+    }
+    @include breakpoint("sm-max") {
+        border-radius: 12px;
     }
 
     .buttonCenteralignment {
@@ -34,6 +38,9 @@
             font-style: normal;
             font-weight: 400;
             line-height: 30px;
+            @include breakpoint("sm-max") {
+                @include font14;
+            }
         }
     }
 
@@ -87,6 +94,10 @@
                 font-weight: 400;
                 margin: 0 0 30px 0;
                 line-height: 30px;
+
+                @include breakpoint("sm-max") {
+                    @include font14;
+                }
             }
 
             .img {

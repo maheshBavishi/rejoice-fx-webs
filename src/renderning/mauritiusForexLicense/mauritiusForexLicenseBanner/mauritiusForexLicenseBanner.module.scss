@@ -7,6 +7,9 @@
     padding: 100px 0;
     border-radius: 34px;
     background-size: cover;
+    @include breakpoint("sm-max") {
+        border-radius: 12px;
+    }
 
     .buttonCenter {
         display: flex;
@@ -29,5 +32,9 @@
         font-weight: 400;
         text-align: center;
         line-height: 30px;
+
+        @include breakpoint("sm-max") {
+            @include font14;
+        }
     }
 }

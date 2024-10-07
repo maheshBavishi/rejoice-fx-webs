@@ -17,6 +17,10 @@
             width: 180px;
             cursor: pointer;
             height: 38px;
+            @include breakpoint("sm-max") {
+                width: 120px;
+                height: 30px;
+            }
         }
 
         .buttonDesign {
@@ -137,6 +141,9 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
+                    @include breakpoint("sm-max") {
+                        @include font14;
+                    }
                 }
             }
 

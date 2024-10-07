@@ -52,6 +52,9 @@
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
+                        @include breakpoint("sm-max") {
+                            @include font14;
+                        }
                     }
                 }
             }
@@ -88,6 +91,10 @@
     border-radius: 34px;
     background: #F6F6F8;
     padding: 100px 0;
+
+    @include breakpoint("sm-max") {
+        border-radius: 12px;
+    }
 
     .grid {
         display: grid;
@@ -132,6 +139,9 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                @include breakpoint("sm-max") {
+                    @include font14;
+                }
             }
         }
 

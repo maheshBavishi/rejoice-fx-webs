@@ -6,6 +6,10 @@
     padding: 80px 80px 80px 80px;
     height: 420px;
 
+    @include breakpoint("sm-max") {
+        border-radius: 12px;
+    }
+
     .grid {
         display: grid;
         grid-template-columns: 1fr 540px;

@@ -13,6 +13,10 @@
         grid-template-columns: 1fr;
         gap: 40px;
     }
+    @include breakpoint("sm-max") {
+        border-radius: 12px;
+        padding: 60px 20px;
+    }
     h2 {
         @include heading1;
         color: #fff;
@@ -46,6 +50,10 @@
         font-weight: 400;
         line-height: 30px;
         max-width: 900px;
+
+        @include breakpoint("sm-max") {
+            @include font14;
+        }
     }
 
     .nextStep {
