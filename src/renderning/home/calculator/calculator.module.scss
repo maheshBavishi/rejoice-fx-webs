@@ -2,7 +2,9 @@
 
 .calculatorAlignment {
     padding: 120px 0;
-
+    @include breakpoint("md-max") {
+        padding: 60px 0;
+    }
     .btnCenter {
         display: flex;
         align-items: center;
@@ -174,6 +176,10 @@
         align-items: center;
         margin: 100px 0 0 0;
         justify-content: space-between;
+
+        @include breakpoint("md-max") {
+            margin: 80px 0 0 0;
+        }
 
         span {
             display: block;

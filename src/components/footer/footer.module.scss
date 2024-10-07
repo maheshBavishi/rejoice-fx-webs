@@ -10,6 +10,10 @@
         padding: 0 0 40px 0;
         border-bottom: 1px solid #BFBFBF;
 
+        @include breakpoint("md-max"){
+            grid-template-columns: 1fr 1fr;
+        }
+
         .secButton {
             button {
                 &:hover {

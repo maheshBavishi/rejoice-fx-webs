@@ -7,6 +7,10 @@
     border-radius: 34px;
     padding: 120px 0;
 
+    @include breakpoint("md-max") {
+        padding: 60px 0;
+    }
+
     .buttonCenteralignment {
         display: flex;
         justify-content: center;
@@ -37,6 +41,16 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 40px;
+
+
+        @include breakpoint("md-max") {
+            grid-template-columns: repeat(2 , 1fr);
+            gap: 20px;
+        }
+        @include breakpoint("sm-max") {
+            grid-template-columns: repeat(1 , 1fr);
+            gap: 20px;
+        }
 
         .griditems {
             border-radius: 30px;
@@ -79,8 +93,11 @@
                 width: 100%;
                 position: relative;
                 border-radius: 20px;
-
                 height: 270px;
+
+                @include breakpoint("md-max") {
+                    height: 180px;
+                }
 
                 img {
                     border-radius: 20px;

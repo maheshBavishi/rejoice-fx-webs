@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './algoBotBanner.module.scss';
 import CommonButton from '@/components/commonButton';
 import Image from 'next/image';
-const Banner1 = '/assets/images/banner1.png';
+const Banner1 = '/assets/images/banner5.png';
 
 export default function AlgoBotBanner() {
     return (
