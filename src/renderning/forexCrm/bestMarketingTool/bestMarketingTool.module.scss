@@ -1,9 +1,9 @@
 @import '../../../scss/mixins/index.scss';
 
 .bestMarketingToolalignment {
-    padding: 120px 0;
+    padding: 0 0 120px 0;
     @include breakpoint("md-max") {
-        padding: 60px 0;
+        padding:  0 0 60px 0;
     }
     .grid {
         display: grid;

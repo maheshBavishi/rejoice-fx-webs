@@ -13,9 +13,9 @@ export default function AlgoBotBanner() {
                 <CommonButton text="Forex CRM"/>
                 </div>
                 <h1>
-                Transform Client Management with Forex CRM
+                Fast, Smart, and Tailored Algo Trading
                 </h1>
-                <p>This highlights the core purpose of the CRM while making it clear that it's tailored for Forex brokers.</p>
+                <p>Rejoice FX’s Algo Trading empowers you to automate strategies with precision, transforming your trading into a seamless experience.</p>
             </div>
         </div>
         <div className={styles.bannerCenterAlignment}>

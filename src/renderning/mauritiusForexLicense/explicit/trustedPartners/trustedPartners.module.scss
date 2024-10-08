@@ -15,11 +15,23 @@
         @include heading1;
         color: #0B0B14;
         text-align: center;
-        margin: 0 0 70px 0;
+        margin: 0 0 60px 0;
     }
+    .logoAlignment {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
 
-    img {
-        max-width: 200px;
-        margin-right: 100px;
+        @include breakpoint("sm-max") {
+            gap: 20px;
+        }
+        img {
+            max-width: 110px;
+            
+            @include breakpoint("sm-max") {
+                max-width: 80px;
+            }
+        }
     }
+   
 }

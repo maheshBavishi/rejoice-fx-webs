@@ -4,87 +4,87 @@ import CommonButton from '@/components/commonButton';
 import SqureIcon from '@/components/icons/squreIcon';
 const SavingImage = '/assets/images/saving.png';
 export default function PheasanTechForex() {
-  return (
-    <>
-    <div className={styles.pheasanTechForexalignment}>
-      <div className="container">
-        <div className={styles.center}>
-            <CommonButton text="FX CRM"/>
-        </div>
-        <h2>
-        Why choose PheasanTech Forex CRM?
-        </h2>
-        <div className={styles.grid}>
-            <div>
-            <div className={styles.griditems}>
-                <div className={styles.cardHeader}>
-                    <p>01</p>
-                    <span>Amazing Features</span>
-                </div>
-                <div className={styles.allIconText}>
-                    <div className={styles.icongrid}>
-                        <SqureIcon/>
-                        <span>Allows your sales teams to execute the tasks digitally</span>
+    return (
+        <>
+            <div className={styles.pheasanTechForexalignment}>
+                <div className="container">
+                    <div className={styles.center}>
+                        <CommonButton text="Forex CRM" />
                     </div>
-                    <div className={styles.icongrid}>
-                        <SqureIcon/>
-                        <span>Integrates widgets and tools as per the requirements</span>
-                    </div>
-                    <div className={styles.icongrid}>
-                        <SqureIcon/>
-                        <span>Prepares the foundation for automation with RPA & AI</span>
+                    <h2>
+                        Why choose RejoiceFX Forex CRM?
+                    </h2>
+                    <div className={styles.grid}>
+                        <div>
+                            <div className={styles.griditems}>
+                                <div className={styles.cardHeader}>
+                                    <p>01</p>
+                                    <span>Amazing Features</span>
+                                </div>
+                                <div className={styles.allIconText}>
+                                    <div className={styles.icongrid}>
+                                        <SqureIcon />
+                                        <span>Allows your sales teams to execute the tasks digitally</span>
+                                    </div>
+                                    <div className={styles.icongrid}>
+                                        <SqureIcon />
+                                        <span>Integrates widgets and tools as per the requirements</span>
+                                    </div>
+                                    <div className={styles.icongrid}>
+                                        <SqureIcon />
+                                        <span>Prepares the foundation for automation with RPA & AI</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.top}>
+                            <div className={styles.griditems}>
+                                <div className={styles.cardHeader}>
+                                    <p>02</p>
+                                    <span>Total Customization</span>
+                                </div>
+                                <div className={styles.allIconText}>
+                                    <div className={styles.icongrid}>
+                                        <SqureIcon />
+                                        <span>Customized CRM as per the scale and target audience</span>
+                                    </div>
+                                    <div className={styles.icongrid}>
+                                        <SqureIcon />
+                                        <span>Easy upgrades/ updates to finetune the functionalities</span>
+                                    </div>
+                                    <div className={styles.icongrid}>
+                                        <SqureIcon />
+                                        <span>Constant insights & reports to monitor the performance</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className={styles.griditems}>
+                                <div className={styles.cardHeader}>
+                                    <p>03</p>
+                                    <span>Ease of Using</span>
+                                </div>
+                                <div className={styles.allIconText}>
+                                    <div className={styles.icongrid}>
+                                        <SqureIcon />
+                                        <span>Simple and straight forward user interface for the team</span>
+                                    </div>
+                                    <div className={styles.icongrid}>
+                                        <SqureIcon />
+                                        <span>Designed to save the time and efforts of the sales teams</span>
+                                    </div>
+                                    <div className={styles.icongrid}>
+                                        <SqureIcon />
+                                        <span>Easy to learn processes; and easier to use on daily basis</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
-            <div className={styles.top}>
-            <div className={styles.griditems}>
-                <div className={styles.cardHeader}>
-                    <p>02</p>
-                    <span>Total Customization</span>
-                </div>
-                <div className={styles.allIconText}>
-                    <div className={styles.icongrid}>
-                        <SqureIcon/>
-                        <span>Customized CRM as per the scale and target audience</span>
-                    </div>
-                    <div className={styles.icongrid}>
-                        <SqureIcon/>
-                        <span>Easy upgrades/ updates to finetune the functionalities</span>
-                    </div>
-                    <div className={styles.icongrid}>
-                        <SqureIcon/>
-                        <span>Constant insights & reports to monitor the performance</span>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div>
-            <div className={styles.griditems}>
-                <div className={styles.cardHeader}>
-                    <p>03</p>
-                    <span>Ease of Using</span>
-                </div>
-                <div className={styles.allIconText}>
-                    <div className={styles.icongrid}>
-                        <SqureIcon/>
-                        <span>Simple and straight forward user interface for the team</span>
-                    </div>
-                    <div className={styles.icongrid}>
-                        <SqureIcon/>
-                        <span>Designed to save the time and efforts of the sales teams</span>
-                    </div>
-                    <div className={styles.icongrid}>
-                        <SqureIcon/>
-                        <span>Easy to learn processes; and easier to use on daily basis</span>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div className="container-lg">
+            {/* <div className="container-lg">
         <div className={styles.savingBoxDesign}>
             <div className="container">
                 <div className={styles.grid}>
@@ -118,7 +118,7 @@ export default function PheasanTechForex() {
                 </div>
             </div>
         </div>
-    </div>
-    </>
-  )
+    </div> */}
+        </>
+    )
 }

@@ -19,7 +19,7 @@ export default function FormationSection() {
               <CommonButton text="St. Vincent Company Formation"/>
                 <h3>Start your Forex Brokerage Business in St Vincent</h3>
                 <p>
-                St Vincent and the Grenadines offers an advanced level of confidentiality and has one of the best privacy laws. You get lowest minimum capital requirements, no need to get a physical office, good payment service providers, and fast application process for St. Vincent forex license. The minimum paid-up capital requirement is lowest in the world. St. Vincent is calling you, get a St Vincent and the Grenadines Forex License! With PheasanTech, you get comprehensive solutions for St. Vincent FSA and St. Vincent forex company formation process.
+                St Vincent and the Grenadines offers an advanced level of confidentiality and has one of the best privacy laws. You get lowest minimum capital requirements, no need to get a physical office, good payment service providers, and fast application process for St. Vincent forex license. The minimum paid-up capital requirement is lowest in the world. St. Vincent is calling you, get a St Vincent and the Grenadines Forex License! With RejoiceFX, you get comprehensive solutions for St. Vincent FSA and St. Vincent forex company formation process.
                  
                 </p>
                 <div className={styles.firstButton}>
