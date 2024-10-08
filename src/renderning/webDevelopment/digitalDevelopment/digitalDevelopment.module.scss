@@ -2,7 +2,9 @@
 
 .digitalDevelopment {
     padding: 0 0 120px 0;
-
+    @include breakpoint("md-max") {
+        padding: 0 0 60px 0;
+    }
     .centerAlignment {
         display: flex;
         align-items: center;
@@ -25,6 +27,16 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
+
+        @include breakpoint("md-max") {
+            padding: 40px 0 0 0;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include breakpoint("sm-max") {
+            padding: 40px 0 0 0;
+            grid-template-columns: 1fr;
+        }
 
         .griditems {
             border-radius: 22px;

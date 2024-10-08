@@ -61,7 +61,7 @@ export default function Header() {
           title: "Strategies",
           description:
             "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-          redirectLink: "algo-bot"
+          redirectLink: "strategies"
         },
       ],
     },
@@ -69,7 +69,7 @@ export default function Header() {
       title: "Forex Services",
       submenu: [
         {
-          title: "AI Web/ Mobile Development",
+          title: "Web/ Mobile Development",
           description:
             "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
           redirectLink: "/mobile-web-development"

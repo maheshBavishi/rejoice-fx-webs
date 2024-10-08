@@ -7,6 +7,7 @@ import RightLgArrow from '@/components/icons/rightLgArrow';
 const Banner1 = '/assets/images/banner1.png';
 import RightBlackLg from '@/components/icons/rightBlackLg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Herobanner() {
   const settings = {
@@ -65,7 +66,9 @@ export default function Herobanner() {
         </Slider>
         <div className={styles.twoButtonAlignment}>
           <div className={styles.firstButton}>
+          <Link href="/contact-us">
           <Button text="Get Started" icon={<RightLgArrow/>}/>
+          </Link>
           </div>
           <div className={styles.secButton}>
           <Button text="Try For Free" icon={<RightBlackLg/>} outline={true}/>

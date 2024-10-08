@@ -53,7 +53,7 @@ export default function MobileHeader({ setHeader, header }) {
                     <div className={classNames(styles.mobileHeaderSubmenu, toogle1 ? styles.show : styles.hide)}>
                         <div className={styles.spacer}>
                             <Link onClick={() => setHeader(false)} href="/algo-bot">AI bot development</Link>
-                            <Link onClick={() => setHeader(false)} href="/algo-bot">Strategies</Link>
+                            <Link onClick={() => setHeader(false)} href="/strategies">Strategies</Link>
                         </div>
                     </div>
                 </div>

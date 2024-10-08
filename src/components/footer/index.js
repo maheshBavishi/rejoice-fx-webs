@@ -21,11 +21,11 @@ export default function Footer() {
               <div className={styles.twoCol}>
                 <div className={styles.twoColItems}>
                   <p>Email</p>
-                  <a>info@rejoicehub.com</a>
+                  <a href="mailto:yash@rejoicehub.com">yash@rejoicehub.com</a>
                 </div>
                 <div className={styles.twoColItems}>
                   <p>Phone Number</p>
-                  <a>+91 9825122840</a>
+                  <a href="callto:+91 97258 068 43">+91 97258 068 43</a>
                 </div>
                 <div className={styles.twoColItems}>
                   <p>Address</p>
@@ -47,10 +47,9 @@ export default function Footer() {
                 </div>
                 <div>
                   <a>AI bot development</a>
-                  <a>Strategies</a>
+                  <Link href="/strategies">Strategies</Link>
                   <a>Forex Services</a>
-                  <a>AI Web/ Mobile Development</a>
-                  <a></a>
+                  <Link href="/mobile-web-development">Web/ Mobile Development</Link>
                   <Link href="/contact-us">Contact Us</Link>
 
                 </div>

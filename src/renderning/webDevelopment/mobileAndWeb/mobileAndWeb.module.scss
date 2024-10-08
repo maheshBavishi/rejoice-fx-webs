@@ -2,7 +2,9 @@
 
 .mobileAndWebAlignment {
     padding: 120px 0;
-
+    @include breakpoint("md-max") {
+        padding: 60px 0;
+    }
     .centerAlignment {
         display: flex;
         align-items: center;
@@ -24,11 +26,21 @@
         grid-template-columns: 1fr 560px 1fr;
         gap: 60px;
 
+        @include breakpoint("md-max") {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
         .img {
             width: 100%;
             position: relative;
             border-radius: 24px;
             height: 400px;
+
+            @include breakpoint("sm-max") {
+                height: 320px;
+                border-radius: 12px;
+            }
         }
 
         h3 {

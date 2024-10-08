@@ -72,6 +72,11 @@
                 line-height: 34px;
                 margin: 0 0 20px 0;
                 letter-spacing: -0.28px;
+
+                @include breakpoint("sm-max") {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
             }
         }
 

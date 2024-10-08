@@ -1,6 +1,6 @@
 @import '../../../scss/mixins/index.scss';
 
-.webDevelopmentBanner {
+.StrategiesBanner {
     background-image: url('/assets/images/banner2.png');
     background-repeat: no-repeat;
     width: 100%;
@@ -12,7 +12,6 @@
     }
     @include breakpoint("sm-max") {
         border-radius: 12px;
-        padding: 60px 20px;
     }
 
     .buttonCenter {
