@@ -280,11 +280,196 @@
 
 .modalWrapper {
     position: fixed;
-    top: 0;
-    z-index: 999;
     left: 0;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
     width: 100%;
     height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    z-index: 9999;
+
+    .modalMd {
+        width: 650px;
+        background-color: #fff;
+        border-radius: 12px;
+
+        @include breakpoint("sm-max") {
+            width: calc(100% - 20px);
+            max-height: calc(100vh - 50px);
+            overflow: auto;
+        }
+
+
+        .modalbody {
+            padding: 0 24px 24px 24px;
+
+            @include breakpoint("sm-max") {
+                padding: 0 20px 20px 20px;
+            }
+
+
+            .firstButton {
+                display: flex;
+                justify-content: center;
+                button {
+                    &:hover {
+                        svg {
+                            path {
+                                fill: #014EFF;
+                                transition: .3s ease-in-out;
+    
+                            }
+                        }
+                    }
+                }
+            }
+
+            .twoCol {
+                padding: 0 0 30px 0;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+    
+                @include breakpoint("sm-max") {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                    padding: 0 0 30px 0;
+                }
+    
+                .input:last-child {
+                    grid-column: span 2;
+                    @include breakpoint("sm-max") {
+                        grid-column: auto;
+                    }
+                }
+            }
+    
+            .input {
+                label {
+                    color: var(--Foundation-Blue-Dark, #0B0B14);
+                    font-size: 16px;
+                    display: block;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: -0.2px;
+                    padding: 0 0 8px 0;
+                }
+    
+                input , select {
+                    width: 100%;
+                    border-radius: 25px;
+                    border: 1px solid var(--foundation-white-normal-active, #CCC);
+                    height: 48px;
+                    padding: 0 16px;
+                    color: var(--foundation-white-dark-active, #0B0B14);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    transition: .3s ease-in-out;
+                    font-family: "DM Sans", sans-serif;
+    
+                    &:focus {
+                        outline: none;
+                        border: 1px solid #014EFF;
+                    }
+    
+                }
+                textarea {
+                    width: 100%;
+                    border-radius: 25px;
+                    border: 1px solid var(--foundation-white-normal-active, #CCC);
+                    height: 120px;
+                    padding: 16px;
+                    color: var(--foundation-white-dark-active, #0B0B14);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    transition: .3s ease-in-out;
+                    font-family: "DM Sans", sans-serif;
+    
+                    &:focus {
+                        outline: none;
+                        border: 1px solid #014EFF;
+                    }
+    
+                }
+    
+                ::placeholder {
+                    color: var(--foundation-white-dark-active, #737373);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-family: "DM Sans", sans-serif;
+    
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            h3 {
+                color: var(--Foundation-Blue-Normal, #0F0F1A);
+                font-size: 22px;
+                font-style: normal;
+                margin: 0 0 5px 0;
+                font-weight: 600;
+                line-height: 32px;
+            }
+
+            p {
+                margin: 0 0 40px 0;
+                color: var(--foundation-white-dark-active, #737373);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+
+                @include breakpoint("sm-max") {
+                    @include font14;
+                }
+
+                a {
+                    color: #014EFF;
+                    cursor: pointer;
+                }
+            }
+
+            
+        }
+
+        .modalClose {
+            padding: 16px 24px 16px 24px;
+            display: flex;
+            justify-content: flex-end;
+
+
+            @include breakpoint("sm-max") {
+                padding: 16px 20px 16px 20px;
+
+            }
+
+            div {
+                border-radius: 6px;
+                cursor: pointer;
+                background: rgba(230, 230, 255, 0.60);
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    width: 14px;
+                    height: 14px;
+
+                    path {
+                        fill: #014EFF;
+                    }
+                }
+            }
+        }
+    }
 }
