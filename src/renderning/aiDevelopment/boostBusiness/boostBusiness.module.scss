@@ -2,12 +2,17 @@
 
 .boostBusiness {
     padding: 120px 0;
-
+    @include breakpoint("md-max") {
+        padding: 60px 0;
+    }
     .grid {
         display: grid;
         grid-template-columns: 650px 1fr;
         gap: 100px;
-
+        @include breakpoint("md-max") {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
         .griditems {
 
 
@@ -16,12 +21,20 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
+                @include breakpoint("sm-max") {
+                    grid-template-columns: 1fr;
+                }
 
                 .subgridItems {
                     border-radius: 22px;
                     border: 1px solid var(--foundation-blue-light-active, #B0C8FF);
                     background: rgba(230, 230, 230, 0.20);
                     padding: 30px;
+
+                    @include breakpoint("sm-max") {
+                        padding: 22px;
+                        border-radius: 12px;
+                    }
 
                     h3 {
                         color: var(--Foundation-Blue-Normal, #014EFF);
@@ -30,6 +43,10 @@
                         font-style: normal;
                         font-weight: 700;
                         line-height: normal;
+
+                        @include breakpoint("sm-max") {
+                            font-size: 30px;
+                        }
                     }
 
                     span {
@@ -39,6 +56,7 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: 30px;
+                        
                     }
                 }
             }
@@ -60,6 +78,10 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: 30px;
+
+                    @include breakpoint("sm-max") {
+                        @include font14;
+                    }
                 }
             }
         }

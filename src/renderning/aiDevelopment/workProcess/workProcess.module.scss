@@ -3,8 +3,15 @@
 .workProcess {
     background-color: rgba(241, 242, 244, .7);
     border-radius: 34px;
-
     padding: 120px 0;
+
+    @include breakpoint("md-max") {
+        padding: 60px 0;
+    }
+
+    @include breakpoint("sm-max") {
+        border-radius: 12px;
+    }
 
     .centerAlignment {
         display: flex;
@@ -28,6 +35,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: 30px;
+
+        @include breakpoint("sm-max") {
+            @include font14;
+        }
     }
 
     .grid {
@@ -35,6 +46,16 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
         padding: 60px 0 0 0;
+
+
+        @include breakpoint("md-max") {
+            grid-template-columns: repeat(2 , 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: repeat(1 , 1fr);
+            gap: 20px;
+        }
 
 
         .gridiitems {
@@ -58,6 +79,10 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 26px;
+
+                @include breakpoint("sm-max") {
+                    @include font14;
+                }
             }
 
             .center {
