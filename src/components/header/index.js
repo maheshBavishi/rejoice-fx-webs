@@ -13,7 +13,14 @@ const Logo = '/assets/logo/logo.svg';
 export default function Header() {
   const [hoveredMenu, setHoveredMenu] = useState(null);
   const [header, setHeader] = useState(false);
-
+  
+  useEffect(() => {
+    if (header) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [header]);
   const handleMouseEnter = (menu) => {
     if (menu != 0) {
       setHoveredMenu(menu);

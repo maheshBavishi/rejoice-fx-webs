@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect} from 'react'
 import styles from './strategiesCard.module.scss';
 import Image from 'next/image';
 import Button from '@/components/button';
@@ -6,6 +6,13 @@ import Link from 'next/link';
 const AiIcon = '/assets/icons/ai-gen-xii.png';
 export default function StrategiesCard() {
   const [modalOpen, setModalOpen] = useState(false);
+  useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [modalOpen]);
   return (
     <>
       <div className={styles.strategiesCard}>
