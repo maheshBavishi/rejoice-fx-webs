@@ -4,6 +4,7 @@ import WhatisAlgo from './whatisAlgo'
 import AdvantagesofAlgo from './advantagesofAlgo'
 import Algoprocess from './algoprocess'
 import PowerfullAlgo from './powerfullAlgo'
+import HireDedicatedDeveloper from './hireDedicatedDeveloper'
 
 export default function AlgoBot() {
   useEffect(() => {
@@ -19,6 +20,7 @@ export default function AlgoBot() {
       <WhatisAlgo/>
       <AdvantagesofAlgo/>
       <Algoprocess/>
+      <HireDedicatedDeveloper/>
       <PowerfullAlgo/>
     </div>
   )

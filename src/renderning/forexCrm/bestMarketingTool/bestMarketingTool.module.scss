@@ -10,13 +10,21 @@
         grid-template-columns: 1fr 700px;
         gap: 70px;
         align-items: center;
-
+        @include breakpoint("md-max") {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
         .img {
             img {
                 border-radius: 24px;
                 display: block;
                 width: 100%;
+            
+                @include breakpoint("md-max") {
+                    border-radius: 12px;
+                }
             }
+
         }
 
         p {

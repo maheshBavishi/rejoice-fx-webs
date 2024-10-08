@@ -3,15 +3,20 @@
 .forexCrmBanner {
     background-image: url('/assets/images/banner.png');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     height: 700px;
     overflow-x: hidden;
     padding: 100px 0;
     border-radius: 34px;
-    background-position: center;
 
     @include breakpoint("md-max") {
         padding: 60px 0;
+        border-radius: 12px;
+    }
+
+    @include breakpoint("sm-max") {
+        height: 650px;
     }
 
     .centeralignment {
@@ -36,6 +41,13 @@
         font-style: normal;
         font-weight: 400;
         line-height: 32px;
+        @include breakpoint("md-max") {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        @include breakpoint("sm-max") {
+            @include font14;
+        }
     }
 }
 
@@ -47,5 +59,12 @@
         position: relative;
         width: 100%;
         height: 670px;
+
+        @include breakpoint("md-max") {
+            height: 520px;
+        }
+        @include breakpoint("sm-max") {
+            height: 320px;
+        }
     }
 }

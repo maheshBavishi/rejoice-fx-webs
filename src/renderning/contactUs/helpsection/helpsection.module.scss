@@ -9,7 +9,10 @@
         display: grid;
         grid-template-columns: 500px 1fr;
         gap: 100px;
-
+        @include breakpoint("md-max") {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
         .firstButton {
             button {
                 &:hover {
@@ -31,8 +34,17 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
 
+            @include breakpoint("sm-max") {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 0 0 30px 0;
+            }
+
             .input:last-child {
                 grid-column: span 2;
+                @include breakpoint("sm-max") {
+                    grid-column: auto;
+                }
             }
         }
 

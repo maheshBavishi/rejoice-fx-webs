@@ -6,14 +6,25 @@
     padding: 80px 80px 80px 80px;
     height: 420px;
 
+    @include breakpoint("md-max") {
+        height: auto;
+        padding: 60px 20px;
+    }
+
     @include breakpoint("sm-max") {
         border-radius: 12px;
     }
+
 
     .grid {
         display: grid;
         grid-template-columns: 1fr 540px;
         gap: 80px;
+
+        @include breakpoint("md-max") {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
 
         button {
             border: none;

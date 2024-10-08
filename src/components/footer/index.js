@@ -4,6 +4,7 @@ import Footerbanner from './footerbanner';
 import Image from 'next/image';
 import Button from '../button';
 import RightBlackLg from '../icons/rightBlackLg';
+import Link from 'next/link';
 const Logo = '/assets/logo/footer-logo.svg';
 
 export default function Footer() {
@@ -39,17 +40,19 @@ export default function Footer() {
               <div className={styles.menuCol}>
                 <div>
                   <a>Forex Licenses</a>
-                  <a>Mauritius Forex License</a>
-                  <a>St. Vincent Forex License</a>
-                  <a>Forex CRM</a>
-                  <a>Algo Bot & Strategies</a>
+                  <Link href="/mauritius-forex-license">Mauritius Forex License</Link>
+                  <Link href="/vincent-forex-license">St. Vincent Forex License</Link>
+                  <Link href="/forex-crm">Forex CRM</Link>
+                  <Link href="/algo-bot">Algo Bot & Strategies</Link>
                 </div>
                 <div>
                   <a>AI bot development</a>
                   <a>Strategies</a>
                   <a>Forex Services</a>
                   <a>AI Web/ Mobile Development</a>
-                  <a>Contact Us</a>
+                  <a></a>
+                  <Link href="/contact-us">Contact Us</Link>
+
                 </div>
               </div>
             </div>

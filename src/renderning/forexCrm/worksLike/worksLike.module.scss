@@ -2,7 +2,9 @@
 
 .worksLikeAlignment {
     padding: 120px 0 0 0;
-
+    @include breakpoint("md-max") {
+        padding: 60px 0 0 0;
+    }
     .centeralignment {
         display: flex;
         justify-content: center;
@@ -21,8 +23,16 @@
             .grid {
                 grid-template-columns: 400px 1fr ;  
 
+                @include breakpoint("md-max") {
+                    grid-template-columns: 1fr;
+                    gap: 40px;
+                }
+
                 .griditems:nth-child(1) {
                     order: 2;
+                    @include breakpoint("md-max") {
+                        order: inherit;
+                    }
                 }
             }
         }
@@ -34,11 +44,21 @@
         margin: 0 0 100px 0;
         @include breakpoint("sm-max") {
             border-radius: 12px;
+            margin: 0 0 60px 0;
+        }
+
+        @include breakpoint("sm-max") {
+            padding: 40px 20px;
         }
         .grid {
             display: grid;
             grid-template-columns: 1fr 400px;
             gap: 60px;
+            
+            @include breakpoint("md-max") {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
 
             .img {
                 img {
@@ -51,6 +71,11 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 40px;
                 padding: 50px 0 0 0;
+
+                @include breakpoint("sm-max") {
+                    grid-template-columns: 1fr;
+                    gap: 30px;
+                }
 
                 .twoColitems {
                     p {
@@ -72,7 +97,6 @@
                         font-style: normal;
                         font-weight: 400;
                         line-height: 26px;
-                        /* 166.667% */
                     }
 
                     .icon {
